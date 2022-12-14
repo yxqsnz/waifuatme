@@ -78,7 +78,7 @@ pub async fn waifu(root: Arc<Mutex<Root>>) -> HttpResult<()> {
             .await
             .unwrap();
         }
-        let splices = url.split("/");
+        let splices = url.split('/');
         let last = splices.last().unwrap_or("unknown.file");
 
         set_state_by_id(

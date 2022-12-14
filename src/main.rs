@@ -112,7 +112,7 @@ async fn main() -> io::Result<()> {
         }
 
         for remove in to_remove {
-            current.tasks.remove(&remove);
+            current.tasks.remove(remove);
 
             if current.tasks.is_empty() {
                 can_say_goodbye = true;
